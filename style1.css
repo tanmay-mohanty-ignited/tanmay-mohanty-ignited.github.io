@@ -1,0 +1,236 @@
+/**************COMMON**************/
+
+body{
+    background-color: #222831;
+    color: #a3f7bf;
+}
+div.navigation{
+    position: sticky;
+    top: 0;
+    background-color: #393E46;
+}
+ul.navbar{
+    list-style-type: none;
+    margin-left : 10%;
+    margin-right: 10%;
+    align-content: center;
+    padding: 1px;
+    background-color: #393E46;
+    overflow: hidden;
+    text-align: center;
+}
+@keyframes navglow {
+    to{background-color: white;
+    color: black;}
+}
+li.navbar:hover{
+    animation: navglow 0.5s;
+}
+li{
+    float: left;
+    margin-right: 5%;
+    margin-right: 5%;
+    padding: 20pt;
+    font-family: "Girassol";
+    font-size: 40px;
+    text-align: center;
+}
+div.headerimg img{
+    width: 100%;
+    height: auto;
+    animation: fade 5s;
+}
+div.header{
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    font-family: "Montserrat";
+    color: #FFAC41;
+    animation: fade 5s;
+}
+@keyframes fade{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+/**************FLEXBOX USED**************/
+.flex-container{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+div.mypic img{
+    width: 75%;
+    height: auto;
+    margin-left: 5%;
+    border-radius: 10px;
+}
+div.aboutme{
+    margin-right: 10%;
+    width : 75%;
+    font-family: 'Open Sans';
+}
+div.social img{
+    margin: 20%;
+    width: 50%;
+    background-color: white;
+    height: auto;
+    transition-duration: 2s;
+}
+div.aboutme h1{
+    color: #81B214;
+}
+div.aboutme h2{
+    color: #FF7A00;
+    font-weight: bolder;
+    font-size: 200%;
+    text-decoration: overline wavy whitesmoke;
+}
+div.mypic img:hover{
+    animation: glow 2s;
+}
+@keyframes glow {
+    to{box-shadow: 0 0 30px #51C4D3;transform: scale(0.9, 0.9);}
+}
+div.aboutme p{
+    font-family: "Roboto";
+    color: #FF005C;
+    font-weight: bold;
+    font-size: 120%;
+}
+div.aboutme h3{
+    color: #FFE227;
+    font-weight: bolder;
+    font-size: 200%;
+    font-family: "Quicksand";
+}
+.active{
+    background-color: #222831;
+    color: #FFD56B;
+}
+div.footer{
+    margin : auto;
+    text-align: center;
+    font-size: 110%;
+}
+div.footer b{
+    color: #E40017;
+    animation: pump 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes pump{
+    0% {font-size: 110%;}
+    50% {font-size: 150%;}
+    100% {font-size:  110%;}
+}
+#connect{
+    display: block;
+    height: 150%;
+    text-align: center;
+    background-color:#393E46;
+    width: 100%;
+    margin-left: 18%;   
+}
+/**************ACADS SPECIAL**************/
+/**************FLEXBOX USED**************/
+.flex-container-1{
+    display: flex;
+    background-color: #393E46;
+    flex-flow: row;
+    font-family: "Montserrat";
+    font-size: 200%;
+    border-style: solid;
+    border-color: #FFD56B;
+    border-width: 10px;
+    border-top-right-radius : 50px;
+    border-bottom-right-radius: 50px;
+    padding: 2%;
+    margin-right: 8%;
+    animation: enlarge 2s;
+    animation-iteration-count: 1;
+}
+.flex-container-2{
+    display: flex;
+    text-align: right;
+    background-color: #393E46;
+    flex-flow: row-reverse;
+    font-family: "Montserrat";
+    font-size: 175%;
+    border-style: solid;
+    border-color: #FFD56B;
+    border-width: 10px;
+    border-top-left-radius : 50px;
+    border-bottom-left-radius: 50px;
+    padding: 2%;
+    margin-left: 10%;
+    animation: enlarge 2s;
+    animation-iteration-count: 1;
+}
+@keyframes enlarge{
+    0% {transform: scale(0.2,1);}
+    100% {transform: scale(1,1);}
+}
+.flex-container-2 p{
+    margin-right: 10%;
+    color: #FF8303;
+    font-weight: bolder;
+}
+.flex-container-1 p{
+    margin-left: 10%;
+    color: #1CC5DC;
+    font-weight: bolder;
+}
+.flex-container-2 img{
+    width: 90%;
+    height: auto;
+}
+.flex-container-1 img{
+    width: 110%;
+    height: auto;
+}
+
+/*************ACHIEVEMENTS SPECIAL************/
+/*************FLEXBOX USED********************/
+.achievements{
+    border-style: double;
+    border-width: 10px;
+    border-color: #FFE227;
+}
+.flex-container-3{
+    display: flex;
+}
+li.categories{
+    text-align: left;
+    font-family: "Montserrat";
+    color: #FB3640;
+    list-style-type: none;
+    font-weight: bolder;
+    text-decoration: solid;
+}
+li.subcategories{
+    text-align: left;
+    list-style-type: none;
+    color: #FFE227;
+    text-decoration: normal;
+    font-weight: lighter;
+}
+li.subcategories:hover{
+    animation: highlight 4s;
+}
+.subcategories b{
+    color: gold;
+}
+@keyframes highlight {
+    0% {background-color: #FFE227;}
+    50% {background-color: white; color: black;}
+    100% {background-color: #222831;}
+}
+ /*************ANIMATIONS**********/
+ /*******CONTACT*************/
+
+ div.social a img{
+     transition: transform 2s;
+ }
+ div.social a img:hover{
+     transform: rotate(360deg);
+ }
+
