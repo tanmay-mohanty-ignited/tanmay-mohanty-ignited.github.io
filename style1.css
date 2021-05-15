@@ -26,6 +26,11 @@ ul.navbar{
 li.navbar:hover{
     animation: navglow 0.5s;
 }
+/******To inherit link properties**********/
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: none;
+}
 li{
     float: left;
     margin-right: 5%;
